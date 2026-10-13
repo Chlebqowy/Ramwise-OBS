@@ -32,7 +32,7 @@ ramwise is a terminal-based RAM usage visualizer that goes beyond basic memory m
 
 %prep
 %setup -q -c -T
-tar -xf ramwise.tar.gz
+tar -xf ../ramwise.tar.gz
 
 %build
 %ifarch x86_64
