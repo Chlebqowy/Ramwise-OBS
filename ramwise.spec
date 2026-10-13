@@ -31,7 +31,7 @@ BuildRequires:  cargo, make
 ramwise is a terminal-based RAM usage visualizer that goes beyond basic memory monitoring. It provides deep memory introspection, intelligent leak detection, and beautiful visualization all in a lightweight TUI application.
 
 %prep
-%setup -q
+%setup -q -c
 tar -xf ramwise.tar.gz
 
 %build
