@@ -22,16 +22,17 @@ Version:        v0.1.0
 Release:        1%{?dist}
 Summary:        a modern memory visualiser tui
 License:        MIT
-URL:            https://github.com/Chlebqoey/ramwise
+URL:            https://github.com/Chlebqowy/ramwise
 %global debug_package %{nil}
-Source0:        ramwise-v0.1.0.tar.gz
+Source0:        %{name}-%{version}.tar.gz
+Source1:        vendor.tar.zst
 BuildRequires:  cargo, make
 
 %description
 ramwise is a terminal-based RAM usage visualizer that goes beyond basic memory monitoring. It provides deep memory introspection, intelligent leak detection, and beautiful visualization all in a lightweight TUI application.
 
 %prep
-%setup -q
+%autosetup -p1 -a1
 
 %build
 %ifarch x86_64
