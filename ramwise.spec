@@ -24,7 +24,7 @@ Summary:        a modern memory visualiser tui
 License:        MIT
 URL:            https://github.com/Chlebqoey/ramwise
 %global debug_package %{nil}
-Source0:        ramwise.tar.gz
+Source0:        ramwise-v0.1.0.tar.gz
 BuildRequires:  cargo, make
 
 %description
